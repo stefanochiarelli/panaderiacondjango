@@ -1,0 +1,22 @@
+{% extends 'estructura.html' %}
+
+
+{% block content %}
+    <h1>Porfavor haga su compra</h1>
+
+    <form action="/contacto/" method="POST"> {% csrf_token %}
+
+        <table>
+
+            
+            {{ compraForm.as_table }}
+        
+        
+        </table>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Clear">
+    </form>
+{% endblock content %}
+            
+   

@@ -1,0 +1,15 @@
+{% extends 'estructura.html' %}
+
+
+
+{% block content %}
+    <h2>Resultados de su busqueda</h2>
+     
+    {% for c  in datoEmail %}
+        <p> El nombre es :{{c.nombre}}</p>
+        <p>El apellido es: {{c.apellido}}</p>
+    {% endfor %}
+        
+    
+{% endblock content %}
+    
